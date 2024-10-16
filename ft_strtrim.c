@@ -6,7 +6,7 @@
 /*   By: ecakdemi <ecakdemi@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 14:56:36 by ecakdemi          #+#    #+#             */
-/*   Updated: 2024/10/13 15:30:19 by ecakdemi         ###   ########.fr       */
+/*   Updated: 2024/10/16 18:55:07 by ecakdemi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,4 +25,5 @@ char	*ft_strtrim(char const *s1, char const *set)
 	while (len && ft_strchr(set, s1[len - 1]))
 		len--;
 	str = ft_substr((char *)s1, 0, len);
+	return (str);
 }
