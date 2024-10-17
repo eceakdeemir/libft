@@ -6,7 +6,7 @@
 /*   By: ecakdemi <ecakdemi@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/12 15:34:30 by ecakdemi          #+#    #+#             */
-/*   Updated: 2024/10/12 15:36:17 by ecakdemi         ###   ########.fr       */
+/*   Updated: 2024/10/17 16:27:43 by ecakdemi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	unsigned char	*str1;
 	unsigned char	*str2;
-	size_t	i;
+	size_t			i;
 
 	i = 0;
 	str1 = (unsigned char *)s1;
