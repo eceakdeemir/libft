@@ -6,7 +6,7 @@
 /*   By: ecakdemi <ecakdemi@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 13:31:01 by ecakdemi          #+#    #+#             */
-/*   Updated: 2024/10/19 13:50:11 by ecakdemi         ###   ########.fr       */
+/*   Updated: 2024/10/20 18:42:46 by ecakdemi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 			ft_lstadd_back(&list, new_node);
 		else
 			ft_lstclear(&list, del);
+		lst = lst->next;
 	}
 	return (list);
 }

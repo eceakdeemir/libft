@@ -6,7 +6,7 @@
 /*   By: ecakdemi <ecakdemi@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 15:24:10 by ecakdemi          #+#    #+#             */
-/*   Updated: 2024/10/20 17:50:37 by ecakdemi         ###   ########.fr       */
+/*   Updated: 2024/10/20 18:25:05 by ecakdemi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,6 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putnbr_fd(n / 10, fd);
 		ft_putnbr_fd(n % 10, fd);
 	}
-	else
+	if (n >= 0 && n <= 9)
 		ft_putchar_fd(n + 48, fd);
 }
