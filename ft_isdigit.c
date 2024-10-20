@@ -6,11 +6,9 @@
 /*   By: ecakdemi <ecakdemi@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/12 11:19:05 by ecakdemi          #+#    #+#             */
-/*   Updated: 2024/10/12 11:21:22 by ecakdemi         ###   ########.fr       */
+/*   Updated: 2024/10/19 13:54:06 by ecakdemi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_isdigit(int c)
 {

@@ -6,7 +6,7 @@
 /*   By: ecakdemi <ecakdemi@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 14:40:36 by ecakdemi          #+#    #+#             */
-/*   Updated: 2024/10/16 18:58:06 by ecakdemi         ###   ########.fr       */
+/*   Updated: 2024/10/20 17:46:51 by ecakdemi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,6 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		str[i] = f(i, s[i]);
 		i++;
 	}
+	str[len] = '\0';
 	return (str);
 }

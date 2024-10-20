@@ -6,11 +6,9 @@
 /*   By: ecakdemi <ecakdemi@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/12 11:28:12 by ecakdemi          #+#    #+#             */
-/*   Updated: 2024/10/12 11:28:44 by ecakdemi         ###   ########.fr       */
+/*   Updated: 2024/10/19 13:54:29 by ecakdemi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_isprint(int c)
 {

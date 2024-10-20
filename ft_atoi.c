@@ -6,11 +6,9 @@
 /*   By: ecakdemi <ecakdemi@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/12 16:45:47 by ecakdemi          #+#    #+#             */
-/*   Updated: 2024/10/12 16:47:12 by ecakdemi         ###   ########.fr       */
+/*   Updated: 2024/10/19 14:20:50 by ecakdemi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_atoi(const char *str)
 {

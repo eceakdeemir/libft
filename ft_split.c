@@ -6,13 +6,14 @@
 /*   By: ecakdemi <ecakdemi@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 15:30:54 by ecakdemi          #+#    #+#             */
-/*   Updated: 2024/10/16 18:57:31 by ecakdemi         ###   ########.fr       */
+/*   Updated: 2024/10/19 19:49:53 by ecakdemi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
-int	ft_string_count(char const *s, char c)
+static int	ft_string_count(char const *s, char c)
 {
 	int	i;
 	int	string_count;
@@ -23,17 +24,19 @@ int	ft_string_count(char const *s, char c)
 	{
 		if (s[i] == c && i > 0 && s[i - 1] != c)
 		{
-			while (s[i] != '\0' && s[i] == c)
+			while (s[i + 1] != '\0' && s[i] == c)
 				i++;
 			string_count++;
 		}
+		i++;
 	}
 	if (s[i - 1] != c && i > 0)
 		string_count++;
 	return (string_count);
 }
 
-void	ft_string_appender(char const *s, char **str, char c, int string_count)
+static void	ft_string_appender(char const *s, char **str, char c,
+			int string_count)
 {
 	int	i;
 	int	strc;
@@ -46,10 +49,10 @@ void	ft_string_appender(char const *s, char **str, char c, int string_count)
 	{
 		if (s[i] != c && i > 0 && s[i - 1] == c)
 			start = i;
-		if (s[i] == c && i > 0 && s[i - 1] != c)
+		if ((s[i] == c && i > 0 && s[i - 1] != c) || s[i] == '\0')
 		{
 			str[strc] = ft_substr(s, start, i - start);
-			while (s[i + 1] != '\0' && s[i + 1] == c)
+			while (s[i] && s[i + 1] != '\0'&& s[i + 1] == c)
 				i++;
 			strc++;
 		}

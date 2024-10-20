@@ -6,7 +6,7 @@
 /*   By: ecakdemi <ecakdemi@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 18:01:09 by ecakdemi          #+#    #+#             */
-/*   Updated: 2024/10/16 14:37:40 by ecakdemi         ###   ########.fr       */
+/*   Updated: 2024/10/20 13:42:07 by ecakdemi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ int	ft_nums_len(int n)
 	len = 0;
 	if (n < 0)
 		len++;
+	if (n == 0)
+		return (1);
 	while (n != 0)
 	{
 		n = n / 10;
@@ -30,7 +32,7 @@ int	ft_nums_len(int n)
 char	*ft_itoa(int n)
 {
 	int		len;
-	int		number;
+	long	number;
 	char	*result;
 
 	number = n;
@@ -38,14 +40,14 @@ char	*ft_itoa(int n)
 	result = (char *)malloc(sizeof(char) * len + 1);
 	if (!result)
 		return (NULL);
+	if (number == 0)
+		result[0] = '0';
 	result[len] = '\0';
 	if (number < 0)
 	{
 		result[0] = '-';
 		number *= -1;
 	}
-	if (number == 0)
-		result[0] = '0';
 	while (number > 0)
 	{
 		result[--len] = (number % 10) + '0';

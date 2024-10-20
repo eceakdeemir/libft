@@ -6,7 +6,7 @@
 /*   By: ecakdemi <ecakdemi@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/12 15:19:37 by ecakdemi          #+#    #+#             */
-/*   Updated: 2024/10/12 15:21:29 by ecakdemi         ###   ########.fr       */
+/*   Updated: 2024/10/19 16:49:49 by ecakdemi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,9 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	char	*str;
-	int		i;
-
-	str = (char *)s;
-	i = 0;
-	while (str[i] != '\0')
-	{
-		if (str[i] == c)
-		{
-			str = (str + i);
-			return (str);
-		}
-		i++;
-	}
+	while (*s != '\0' && *s != c)
+		s++;
+	if (*s == c)
+		return ((char *)s);
 	return (0);
 }

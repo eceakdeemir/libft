@@ -6,11 +6,9 @@
 /*   By: ecakdemi <ecakdemi@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/12 15:15:49 by ecakdemi          #+#    #+#             */
-/*   Updated: 2024/10/12 15:18:14 by ecakdemi         ###   ########.fr       */
+/*   Updated: 2024/10/19 14:14:44 by ecakdemi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_toupper(int c)
 {

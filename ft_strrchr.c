@@ -6,7 +6,7 @@
 /*   By: ecakdemi <ecakdemi@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/12 15:31:45 by ecakdemi          #+#    #+#             */
-/*   Updated: 2024/10/12 15:33:30 by ecakdemi         ###   ########.fr       */
+/*   Updated: 2024/10/19 18:18:22 by ecakdemi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,14 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	int		i;
-	char	*str;
-	char	*control;
+	int	len;
 
-	str = (char *)s;
-	i = 0;
-	if (!str)
-		return (0);
-	while (str[i] != '\0')
+	len = ft_strlen(s);
+	while (len >= 0)
 	{
-		if (str[i] == c)
-			control = (str + i);
-		i++;
+		if (s[len] == (char)c)
+			return ((char *)(s + len));
+		len--;
 	}
-	return (control);
+	return (0);
 }
