@@ -6,7 +6,7 @@
 /*   By: ecakdemi <ecakdemi@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/12 11:53:01 by ecakdemi          #+#    #+#             */
-/*   Updated: 2024/10/12 12:09:16 by ecakdemi         ###   ########.fr       */
+/*   Updated: 2024/11/01 19:17:03 by ecakdemi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_memmove(void *dest, const void *src, size_t len)
 	else
 	{
 		while (len--)
-			((char *)dest)[len] = ((char *)src)[len];
+			((char *)dest)[len] = ((const char *)src)[len];
 	}
 	return (dest);
 }

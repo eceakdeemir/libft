@@ -6,7 +6,7 @@
 /*   By: ecakdemi <ecakdemi@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/12 11:44:33 by ecakdemi          #+#    #+#             */
-/*   Updated: 2024/10/20 13:32:01 by ecakdemi         ###   ########.fr       */
+/*   Updated: 2024/11/01 19:17:26 by ecakdemi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 		return (dst);
 	while (i < n)
 	{
-		((unsigned char *)dst)[i] = ((unsigned char *)src)[i];
+		((char *)dst)[i] = ((const char *)src)[i];
 		i++;
 	}
 	return (dst);

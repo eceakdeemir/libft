@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ecakdemi <ecakdemi@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/12 11:38:33 by ecakdemi          #+#    #+#             */
-/*   Updated: 2024/10/12 11:38:44 by ecakdemi         ###   ########.fr       */
+/*   Created: 2024/10/28 16:11:23 by ecakdemi          #+#    #+#             */
+/*   Updated: 2024/10/28 19:37:28 by ecakdemi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	ft_memset(s, '\0', n);
+	ft_memset(s, 0, n);
 }

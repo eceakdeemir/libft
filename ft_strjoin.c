@@ -6,12 +6,11 @@
 /*   By: ecakdemi <ecakdemi@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 14:42:26 by ecakdemi          #+#    #+#             */
-/*   Updated: 2024/10/20 13:29:45 by ecakdemi         ###   ########.fr       */
+/*   Updated: 2024/11/01 19:14:55 by ecakdemi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

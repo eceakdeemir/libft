@@ -6,13 +6,13 @@
 /*   By: ecakdemi <ecakdemi@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 18:01:09 by ecakdemi          #+#    #+#             */
-/*   Updated: 2024/10/20 13:42:07 by ecakdemi         ###   ########.fr       */
+/*   Updated: 2024/11/01 18:36:33 by ecakdemi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_nums_len(int n)
+static int	ft_nums_len(int n)
 {
 	int	len;
 
